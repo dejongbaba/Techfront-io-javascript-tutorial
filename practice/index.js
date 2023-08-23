@@ -1,3 +1,3 @@
-const helloText = "Hello world";
-console.log(helloText);
-
+const helloText = 'Hello world';
+const demoText = "this is a new day and I'mg grateful!!";
+console.log({ helloText, demoText });
