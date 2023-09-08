@@ -1,0 +1,23 @@
+{
+  "name": "techfront-io-javascript-tutorial",
+  "version": "1.0.0",
+  "description": "a tutorial session for javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/dejongbaba/Techfront-io-javascript-tutorial.git"
+  },
+  "keywords": [
+    "javascript",
+    "tutorial"
+  ],
+  "author": "Agunbiade Adedeji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dejongbaba/Techfront-io-javascript-tutorial/issues"
+  },
+  "homepage": "https://github.com/dejongbaba/Techfront-io-javascript-tutorial#readme"
+}
