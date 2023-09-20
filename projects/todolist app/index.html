@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="todo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Todo Application</title>
   </head>
   <body>
@@ -12,5 +19,23 @@
     <!-- a button to submit the todo -->
     <!-- on the list item we should have a button that helps to remove the todo items or strike out the todo item -->
     <!-- on the list  item we should also be able to check the list item in order to delete the todo item -->
+    <div class="container">
+      <div class="todo-app">
+        <h2>TO-DO LIST <img src="images/icon.png" alt="todo-icon" /></h2>
+        <div class="input-list">
+          <input type="text" id="input-box" placeholder="Add your list" />
+          <button>Add</button>
+        </div>
+        <ul id="task-list">
+          <li>Monday Task</li>
+          <li>Tuesday Task</li>
+          <li>Wednesday Task</li>
+          <li>Thursday Task</li>
+          <li>Friday Task</li>
+          <li>Saturday Task</li>
+          <li>Sunday Task</li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
