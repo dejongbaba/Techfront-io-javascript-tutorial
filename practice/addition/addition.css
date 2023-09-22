@@ -1,0 +1,35 @@
+#addition-form {
+  padding: 2rem;
+  background-color: cadetblue;
+}
+#addition-form input,
+#addition-form label,
+#addition-form button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+#addition-form label {
+  padding: 0;
+}
+
+button {
+  background-color: aquamarine;
+  color: black;
+}
+.result-container {
+  background-color: lightblue;
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+  width: 50%;
+  margin: 2rem auto;
+  height: 150px;
+  padding: 2rem;
+}
+.result-container span {
+  display: block;
+}
