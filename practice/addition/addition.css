@@ -1,5 +1,7 @@
 #addition-form {
   padding: 2rem;
+  width: 50%;
+  margin: 3rem auto;
   background-color: cadetblue;
 }
 #addition-form input,
