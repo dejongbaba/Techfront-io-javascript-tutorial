@@ -23,19 +23,29 @@
       <div class="todo-app">
         <h2>TO-DO LIST <img src="images/icon.png" alt="todo-icon" /></h2>
         <div class="input-list">
-          <input type="text" id="input-box" placeholder="Add your list" />
-          <button>Add</button>
+          <input
+            type="text"
+            value="hello"
+            id="input-box"
+            placeholder="Add your list"
+          />
+          <button type="button" onclick="onClickAdd()">Add</button>
         </div>
         <ul id="task-list">
-          <li>Monday Task</li>
-          <li>Tuesday Task</li>
+          <!-- <li>
+            <input type="checkbox" name="" id="" value="" />
+            <span>Monday Task</span>
+            <button type="button" class="delete">Delete</button>
+          </li> -->
+          <!-- <li>Tuesday Task</li>
           <li>Wednesday Task</li>
           <li>Thursday Task</li>
           <li>Friday Task</li>
           <li>Saturday Task</li>
-          <li>Sunday Task</li>
+          <li>Sunday Task</li> -->
         </ul>
       </div>
     </div>
+    <script src="./todo.js"></script>
   </body>
 </html>
