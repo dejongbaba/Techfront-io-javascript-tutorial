@@ -24,8 +24,10 @@ const onClickAdd = () => {
       onClickDelete(randomId);
     });
     const checkBox = document.createElement('input');
-    checkBox.setAttribute('class', 'delete');
     checkBox.setAttribute('type', 'checkbox');
+    checkBox.addEventListener('change', function () {
+      onCheckTodo(randomId);
+    });
     const spanText = document.createElement('span');
     spanText.innerHTML = inputValue;
 
@@ -56,6 +58,17 @@ const onClickDelete = (id) => {
   listItem.parentNode.removeChild(listItem);
 };
 
+const onCheckTodo = (id) => {
+  const listItem = document.getElementById(id);
+  const input = listItem.firstChild;
+  const span = listItem.querySelector('span');
+  if (input.checked) {
+    span.setAttribute('style', 'text-decoration:line-through');
+  } else {
+    span.setAttribute('style', 'text-decoration:none');
+  }
+  console.log('input', input);
+};
 // helper functions
 function generateString(length) {
   // declare all characters

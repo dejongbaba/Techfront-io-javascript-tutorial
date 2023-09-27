@@ -1,7 +1,7 @@
 /* font-family: 'Poppins', sans-serif; */
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -44,7 +44,7 @@
   margin-bottom: 25px;
 }
 
-input {
+input.input-box {
   flex: 1;
   border: none;
   outline: none;
@@ -66,24 +66,19 @@ button {
 ul li {
   list-style: none;
   font-size: 17px;
-  padding: 12px 8px 12px 50px;
+  padding: 12px 8px 12px 8px;
   user-select: none;
   cursor: pointer;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
-/* ul li ::before {
-  content: '';
-  position: absolute;
-  height: 28px;
-  width: 28px;
-  border-radius: 50px;
-  background: url(images/unchecked.png);
-  background-size: cover;
-  background-position: center;
-  top: 12px;
-  left: 8px;
-} */
+ul li span {
+  flex-grow: 1;
+  text-transform: capitalize;
+  margin-left: 1rem;
+}
 
 .delete {
   border-radius: 10px;
@@ -91,6 +86,5 @@ ul li {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-
   padding: 5px;
 }
