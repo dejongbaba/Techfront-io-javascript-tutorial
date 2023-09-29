@@ -74,10 +74,12 @@ ul li {
   align-items: center;
 }
 
-ul li span {
+ul li div {
   flex-grow: 1;
   text-transform: capitalize;
   margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .delete {
@@ -87,4 +89,11 @@ ul li span {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   padding: 5px;
+}
+.text {
+  margin-bottom: 2px;
+}
+.date {
+  color: lightgray;
+  font-size: 0.7rem;
 }
