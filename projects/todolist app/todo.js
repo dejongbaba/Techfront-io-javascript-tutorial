@@ -28,13 +28,22 @@ const onClickAdd = () => {
     checkBox.addEventListener('change', function () {
       onCheckTodo(randomId);
     });
-    const spanText = document.createElement('span');
-    spanText.innerHTML = inputValue;
-
+    const listText = document.createElement('p');
+    const dateText = document.createElement('span');
+    const listDiv = document.createElement('div');
+    listText.innerHTML = inputValue;
+    dateText.innerHTML = new Date();
+    listText.setAttribute('class', 'text');
+    dateText.setAttribute('class', 'date');
+    //append the text information
+    listDiv.appendChild(listText);
+    listDiv.appendChild(dateText);
+    //append the list item
     listItem.appendChild(checkBox);
-    listItem.appendChild(spanText);
+    listItem.appendChild(listDiv);
     listItem.appendChild(deleteButton);
 
+    //append the list item
     list.appendChild(listItem);
     list.appendChild(listItem);
     input.value = '';
@@ -61,7 +70,7 @@ const onClickDelete = (id) => {
 const onCheckTodo = (id) => {
   const listItem = document.getElementById(id);
   const input = listItem.firstChild;
-  const span = listItem.querySelector('span');
+  const span = listItem.querySelector('p.text');
   if (input.checked) {
     span.setAttribute('style', 'text-decoration:line-through');
   } else {
