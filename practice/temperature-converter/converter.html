@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <style>
+      body {
+        height: 100vh;
+        color: white;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      body div {
+        height: 50vh;
+        padding-top: 30px;
+      }
+      .cold {
+        background-color: cornflowerblue;
+      }
+      .hot {
+        background-color: crimson;
+      }
+      .cel-result,
+      .far-result {
+        font-size: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cold">
+      <h1>Celcius to Farenhiet</h1>
+      <input type="number" name="Celcius" id="Celcius" />
+      <h2 class="cel-result">4.0 <sup>o</sup> F</h2>
+    </div>
+    <div class="hot">
+      <h1>Farenhiet to Celcius</h1>
+      <input type="number" name="Farenhiet" id="Farenhiet" />
+      <h2 class="far-result">4.0 <sup>o</sup> C</h2>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
